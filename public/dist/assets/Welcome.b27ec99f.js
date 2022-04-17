@@ -1,0 +1,1 @@
+import{d as e,o as t,c as s,a as o,u as c,H as a,b as n}from"../app.js";const r={class:"min-h-screen bg-blue-500 text-white flex items-center justify-center"},l=n("h1",{class:"text-3xl font-bold underline"}," Welcome! ",-1),u=e({setup(i){return(d,_)=>(t(),s("div",r,[o(c(a),{title:"Welcome"}),l]))}});export{u as default};

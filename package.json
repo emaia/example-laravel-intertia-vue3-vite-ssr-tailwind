@@ -1,18 +1,25 @@
 {
     "private": true,
     "scripts": {
-        "dev": "npm run development",
-        "development": "mix",
-        "watch": "mix watch",
-        "watch-poll": "mix watch -- --watch-options-poll=1000",
-        "hot": "mix watch --hot",
-        "prod": "npm run production",
-        "production": "mix --production"
+        "dev": "vite",
+        "development": "vite",
+        "build": "vite build",
+        "build:ssr": "vite build --outDir public/js/server --config vite.config.ssr.ts --ssr resources/js/ssr.ts",
+        "prod": "vite build",
+        "production": "vite build",
+        "ssr:server": "node public/js/server/ssr.js"
     },
     "devDependencies": {
-        "axios": "^0.25",
-        "laravel-mix": "^6.0.6",
-        "lodash": "^4.17.19",
-        "postcss": "^8.1.14"
+        "@inertiajs/inertia": "^0.11.0",
+        "@inertiajs/inertia-vue3": "^0.6.0",
+        "@inertiajs/server": "^0.1.0",
+        "@types/node": "^17.0.24",
+        "@vitejs/plugin-vue": "^2.3.1",
+        "@vue/server-renderer": "^3.2.33",
+        "autoprefixer": "^10.4.4",
+        "postcss": "^8.4.12",
+        "tailwindcss": "^3.0.24",
+        "vite": "^2.9.5",
+        "vue": "^3.2.33"
     }
 }

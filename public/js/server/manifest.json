@@ -1,0 +1,7 @@
+{
+  "resources/js/ssr.ts": {
+    "file": "ssr.js",
+    "src": "resources/js/ssr.ts",
+    "isEntry": true
+  }
+}
